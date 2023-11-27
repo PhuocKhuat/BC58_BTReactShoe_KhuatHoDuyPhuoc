@@ -77,15 +77,16 @@ export default class Ex_Shoe extends Component {
       <div className="container row">
         <h1>Shoes Shop</h1>
         <div className="col" style={{ position: "relative", top: "400px" }}>
-          <a href="/" className="text-decoration-none">
+          <a href="/" className="text-decoration-none bg-primary text-white p-2 shop">
             Home
           </a>
           <br />
-          <a href="/shop" className="text-decoration-none"
+          <br />
+          <a href="/shop" className="text-decoration-none bg-success text-white p-2 shop"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
           >
-            Shop
+            Shop <span className="text-warning">{this.handleCountCarts()}</span>
           </a>
         </div>
         <div className="row col-11">
